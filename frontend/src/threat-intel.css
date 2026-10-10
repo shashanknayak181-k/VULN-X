@@ -1,0 +1,87 @@
+/* VULN-X Threat Intelligence */
+
+.threat-intel-section {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(15, 15, 18, 0.95);
+}
+
+.threat-intel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.threat-intel-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.threat-intel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.threat-intel-card {
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: #18181d;
+  overflow-wrap: anywhere;
+}
+
+.threat-intel-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #f3f3f3;
+}
+
+.threat-intel-query {
+  font-size: 12px;
+  color: #ff5252;
+}
+
+.threat-intel-source {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #a0a0aa;
+}
+
+.threat-intel-snippet {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #c4c4cc;
+}
+
+.threat-intel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  color: #ff5252;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.threat-intel-link:hover {
+  text-decoration: underline;
+}
+
+.threat-intel-empty {
+  color: #a0a0aa;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .threat-intel-section {
+    padding: 16px;
+  }
+
+  .threat-intel-grid {
+    grid-template-columns: 1fr;
+  }
+}
